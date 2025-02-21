@@ -6,10 +6,8 @@ using UnityEngine.UI;
 public class SushiSpawner : MonoBehaviour
 {
     public GameObject SushiPrefabs;
-    public transform spawnPos;
-    public button spawn;
-
-    public float b = 12f; 
+    public Transform spawnPos;
+    //public Button spawn;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +23,7 @@ public class SushiSpawner : MonoBehaviour
 
     public void spawnSushi()
     {
-        instantiate(SushiPrefabs, spawnPos, 0);
+        Instantiate(SushiPrefabs, spawnPos);
 
     }
 }
